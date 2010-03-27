@@ -1,0 +1,12 @@
+{% extends "site/catalog.html" %}
+{% load markup %}
+{% block content %}
+<div class="span-24">
+	{{ page.dic.description }}
+</div>
+<div class="span-24">
+	{% with "horizontal" as catalog_class %}
+		{% include "site/catalog.inc.html" %}
+	{% endwith %}
+</div>
+{% endblock %}

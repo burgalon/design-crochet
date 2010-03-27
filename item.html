@@ -1,0 +1,20 @@
+{% extends "site/item.html" %}
+{% load markup %}
+{% block bodyClass %}{{ block.super }} page_{{ page.template }}{% for t in page.pages %} page_{{t.slug_name}}{% endfor %}{% endblock %}
+{% block content %}
+	<div class="span-6">
+		<h3>{{item.name|capfirst}}</h3>
+		{{ page.dic.description|textile }}
+		<div class="item_nav">
+			<a class="item-prev" href="{{prev_item.url}}" title="{{ prev_item.name }}">&laquo; Previous</a>
+			<a class="item-next" href="{{next_item.url}}" title="{{ next_item.name }}">Next &raquo;</a>
+		</div>
+	</div>
+	<div class="prepend-1 span-17 last">
+		{% ifequal item.mime_type "image/jpeg" %}
+			<a href="{{ next_item.url }}" title="{{ next_item.name }}">{{ item.render }}</a>
+		{% else %}
+			{{item.render}}
+		{% endifequal %}
+	</div>
+{% endblock %}

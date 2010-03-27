@@ -1,0 +1,38 @@
+{% extends pack.base.template %}
+{% load utils %}
+
+{% block content %}
+<div class="span-7 colborder">
+	<h2>{{ page.name }}</h2>
+	{{ page.dic.description }}
+</div>
+<div class="span-8 colborder">
+	{%if form%}
+			<form method="post" action=".">
+				<table>
+					{{ form.as_p }}
+				</table>
+				<input type="submit" class="submit" value="Send" />
+			</form>
+		{%endif%}
+		{% if message %}
+			<div class="notice">
+				{{message|linebreaks}}
+			</div>
+		{% endif %}
+</div>
+<div class="span-7 last">
+	<h3>telephone</h3>
+	<p>{{  portfolio.dic.telephone }}</p>
+	
+	<h3>email</h3>
+	<p>{{  portfolio.dic.email|replace:"/@/(at)" }}</p>
+	
+	<h3>follow us</h3>
+	<ul class="nav">
+		{% for key,val in portfolio.dic.social|split %}
+			<li class="key"><a href="{{ val }}">{{ key }}</a></li>
+		{% endfor %}
+	</ul>
+</div>
+{% endblock %}
