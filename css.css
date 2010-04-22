@@ -38,8 +38,12 @@ ul {margin: 0;padding: 0;}
 .nav .first {padding-left: 0;}
 .rtl .nav .first {padding-right: 0;}
 
+.float {float: left;}
+.rtl .float {float: right;}
+
 .active {text-decoration: none; color: black;}
 
+#navigation .home {display: none;}
 /** base.html - Global Containers **/
 #header h1 {display: inline; float: right;}
 #header .logo a {text-decoration:none; font-size: 35px; color: black;}
@@ -48,24 +52,27 @@ ul {margin: 0;padding: 0;}
 #navigation {float: left; width: auto; margin-top: 1em;}
 
 /** site/item.html **/
-.t_item h2 {text-align: center;}
-.t_item .item_wrap a {text-align: center; display: block;}
-.t_item .item_wrap img {max-width: 671px; display: block; margin: 0 auto;}
-.t_item .item-sub-title{font-weight:bold;}
+.item_wrap img {width: 670px;}
+.item-photo {display: block; width: 10px; height: 10px; margin-left: 5px; background: grey; border: 1px solid black; text-indent: -9999px; overflow:hidden; text-decoration:none; float: left;}
+.rtl .item-photo {float: right;}
+.item-photo.active {background: none;}
 
 /** site/catalogs.inc - Catalogs **/
 .t_hcatalog h2 {display: none;}
 
 .catalog .item-title, #content .catalog .item-tags {color: black; text-decoration: none; display: block; line-height: 2em; height: 2em; font-size: 1.5em; text-transform: capitalize;}
+
 .catalog li {display: block; min-height: 150px; position: relative; margin-right: 10px;}
+.rtl .catalog li {margin-right: 0; margin-left: 10px;}
+
 .item-thumb img{max-width: 300px; max-height: 150px;}
 .item-thumb {float: left; width: 300px; height: 150px; text-align: center; background: #f7f7f7; overflow: hidden;}
 .rtl .item-thumb {float: right;}
 
-#content .catalog {clear: both;}
+#content .catalog {clear: both; margin: 0;}
 .horizontal .item-title, .horizontal .item-tags {width: 300px;}
 .horizontal li {float: left; width: 300px;}
-.rtl .horizontal li {float: right;} 
+.rtl .horizontal li {float: right;}
 
 .horizontal .item-title, .horizontal .item-sub-title {float: left; }
 .rtl .horizontal .item-title, .rtl .horizontal .item-sub-title {float: right; }
@@ -77,6 +84,44 @@ ul {margin: 0;padding: 0;}
 .item-sub-title {text-decoration: none; min-height: 4em; color: black;}
 
 
+/** site/home.html **/
+.banner {display: block; width: 310px; height: 310px; text-indent: -1000em;overflow:hidden;}
+.banner-text {height: 230px; line-height: 310px; vertical-align: middle;}
+
 /** site/contact.html **/
 textarea, input {width: 240px;}
 label {display: block;}
+.icon24 {display: block; width: 24px; height: 24px; text-indent: -1000em;}
+#social {margin: 0;}
+#social a {padding: 0 0.1em;}
+
+.blogger {background: url('{{ pack.blogger.get_file }}') center 0 no-repeat;}
+.delicious {background: url('{{ pack.delicious.get_file }}') center 0 no-repeat;}
+.digg {background: url('{{ pack.digg.get_file }}') center 0 no-repeat;}
+.ebay {background: url('{{ pack.ebay.get_file }}') center 0 no-repeat;}
+.facebook {background: url('{{ pack.facebook.get_file }}') center 0 no-repeat;}
+.feed {background: url('{{ pack.feed.get_file }}') center 0 no-repeat;}
+.flickr {background: url('{{ pack.flickr.get_file }}') center 0 no-repeat;}
+.friendfeed {background: url('{{ pack.friendfeed.get_file }}') center 0 no-repeat;}
+.friendster {background: url('{{ pack.friendster.get_file }}') center 0 no-repeat;}
+.furl {background: url('{{ pack.furl.get_file }}') center 0 no-repeat;}
+.google {background: url('{{ pack.google.get_file }}') center 0 no-repeat;}
+.lastfm {background: url('{{ pack.lastfm.get_file }}') center 0 no-repeat;}
+.linkedin {background: url('{{ pack.linkedin.get_file }}') center 0 no-repeat;}
+.livejournal {background: url('{{ pack.livejournal.get_file }}') center 0 no-repeat;}
+.magnolia {background: url('{{ pack.magnolia.get_file }}') center 0 no-repeat;}
+.mixx {background: url('{{ pack.mixx.get_file }}') center 0 no-repeat;}
+.myspace {background: url('{{ pack.myspace.get_file }}') center 0 no-repeat;}
+.netvibes {background: url('{{ pack.netvibes.get_file }}') center 0 no-repeat;}
+.newsvine {background: url('{{ pack.newsvine.get_file }}') center 0 no-repeat;}
+.picasa {background: url('{{ pack.picasa.get_file }}') center 0 no-repeat;}
+.pownce {background: url('{{ pack.pownce.get_file }}') center 0 no-repeat;}
+.reddit {background: url('{{ pack.reddit.get_file }}') center 0 no-repeat;}
+.stumbleupon {background: url('{{ pack.stumbleupon.get_file }}') center 0 no-repeat;}
+.technorati {background: url('{{ pack.technorati.get_file }}') center 0 no-repeat;}
+.twitter {background: url('{{ pack.twitter.get_file }}') center 0 no-repeat;}
+.vimeo {background: url('{{ pack.vimeo.get_file }}') center 0 no-repeat;}
+.webshots {background: url('{{ pack.webshots.get_file }}') center 0 no-repeat;}
+.wordpress {background: url('{{ pack.wordpress.get_file }}') center 0 no-repeat;}
+.yelp {background: url('{{ pack.yelp.get_file }}') center 0 no-repeat;}
+.youtube {background: url('{{ pack.youtube.get_file }}') center 0 no-repeat;}

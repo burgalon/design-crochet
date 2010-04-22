@@ -1,8 +1,15 @@
 {% extends "site/catalog.html" %}
 {% load markup %}
+{% block head %}
+	{{ block.super }}
+	<style type="text/css">
+		.banner {background:url({{ files.banner.get_file }}) no-repeat;}
+	</style>
+{% endblock %}
+
 {% block content %}
-<div class="span-24">
-	{{ page.dic.description }}
+<div class="span-24 last banner">
+	{{ page.dic.moto }}
 </div>
 <div class="span-24">
 	{% with "horizontal" as catalog_class %}

@@ -9,8 +9,11 @@
 <div class="span-8 colborder">
 	{%if form%}
 		<form method="post" action=".">
-				{{ form.as_p }}
-			<input type="submit" class="submit" value="Send" />
+			<p><label for="id_name">שם:</label> <input id="id_name" name="name" maxlength="100" type="text"></p>
+			<p><label for="id_email">אימייל:</label> <input id="id_email" name="email" maxlength="200" type="text"></p>
+			<p><label for="id_body">הודעה:</label> <textarea id="id_body" rows="10" cols="40" name="body"></textarea></p>
+			<input name="subject" value="Support" id="id_subject" type="hidden">
+			<input type="submit" class="submit" value="שלח" />
 		</form>
 	{%endif%}
 	{% if message %}
@@ -20,13 +23,13 @@
 	{% endif %}
 </div>
 <div class="span-7 last">
-	<h3>telephone</h3>
+	<h3>טלפון</h3>
 	<p>{{  portfolio.dic.telephone }}</p>
 	
-	<h3>email</h3>
+	<h3>אימייל</h3>
 	<p>{{  portfolio.dic.email|obfuscate }}</p>
 	
-	<h3>follow us</h3>
+	<h3>עקוב אחרינו</h3>
 	<ul id="social" class="nav">
 		{% for key,val in portfolio.dic.social|split %}
 			<li><a href="{{ val }}" class="float icon24 {{ key }}">{{ key }}</a></li>
