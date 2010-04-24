@@ -43,13 +43,17 @@ ul {margin: 0;padding: 0;}
 
 .active {text-decoration: none; color: black;}
 
-#navigation .home {display: none;}
 /** base.html - Global Containers **/
-#header h1 {display: inline; float: right;}
+#header h1 {display: inline; float: left;}
+.rtl #header h1 {float: right;}
+
+#navigation {float: right; width: auto; margin-top: 1em;}
+.rtl #navigation {float: left;}
+
+#navigation .home {display: none;}
 #header .logo a {text-decoration:none; font-size: 35px; color: black;}
 #content {background-color: #fff; min-height: 330px; border-top: 4px solid #EAEFF3; padding-top: 1.5em;}
 #footer {text-align:center; background: #fff;}
-#navigation {float: left; width: auto; margin-top: 1em;}
 
 /** site/item.html **/
 .item_wrap img {width: 670px;}
@@ -71,7 +75,7 @@ ul {margin: 0;padding: 0;}
 
 #content .catalog {clear: both; margin: 0;}
 .horizontal .item-title, .horizontal .item-tags {width: 300px;}
-.horizontal li {float: left; width: 300px;}
+.horizontal li {float: left; width: 310px;}
 .rtl .horizontal li {float: right;}
 
 .horizontal .item-title, .horizontal .item-sub-title {float: left; }
@@ -83,6 +87,7 @@ ul {margin: 0;padding: 0;}
 .rss {display: block; clear: both;}
 .item-sub-title {text-decoration: none; min-height: 4em; color: black;}
 
+.last {margin: 0 !important;}
 
 /** site/home.html **/
 .banner {display: block; width: 310px; height: 310px; text-indent: -1000em;overflow:hidden;}
@@ -91,7 +96,7 @@ ul {margin: 0;padding: 0;}
 /** site/contact.html **/
 textarea, input {width: 240px;}
 label {display: block;}
-.icon24 {display: block; width: 24px; height: 24px; text-indent: -1000em;}
+.icon24 {display: block; width: 24px; height: 24px; text-indent: -1000em; overflow:hidden;}
 #social {margin: 0;}
 #social a {padding: 0 0.1em;}
 
