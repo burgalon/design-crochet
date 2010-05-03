@@ -1,4 +1,11 @@
 /** Globals **/
+body {background: url({{ pack.bg.get_file }}) repeat; }
+
+#navigation .n_1 {background-color: #ffb7b9;}
+#navigation .n_2 {background-color: #3a9fbc;}
+#navigation .n_3 {background-color: #968f71;}
+#navigation .n_4 {background-color: #a06c39;}
+
 table{ border-collapse: collapse !important; margin: 0 auto; width: 100%;}
 ul li {list-style: none;}
 ul {margin: 0;padding: 0;}
@@ -52,7 +59,10 @@ ul {margin: 0;padding: 0;}
 
 #navigation .home {display: none;}
 #header .logo a {text-decoration:none; font-size: 35px; color: black;}
-#content {background-color: #fff; min-height: 330px; border-top: 4px solid #EAEFF3; padding-top: 1.5em;}
+
+#content {background-color: #fff; min-height: 330px; border-top: 4px solid #EAEFF3; padding-top: 1.5em;
+background: url({{ pack.stripes_h.get_file}}) repeat;}
+}
 #footer {text-align:center; background: #fff;}
 
 /** site/item.html **/
