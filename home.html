@@ -13,12 +13,12 @@
 		<div class="span-24 last banner">
 			{{ page.dic.moto }}
 		</div>
-	</div>
-</div>
 
-<div class="span-24">
-	{% with "horizontal" as catalog_class %}
-		{% include "site/catalog.inc.html" %}
-	{% endwith %}
+		<div class="span-24">
+			{% with "horizontal" as catalog_class %}
+				{% include "site/catalog.inc.html" %}
+			{% endwith %}
+		</div>
+	</div>
 </div>
 {% endblock %}
