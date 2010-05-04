@@ -8,9 +8,14 @@
 {% endblock %}
 
 {% block content %}
-<div class="span-24 last banner">
-	{{ page.dic.moto }}
+<div id="content-2">
+	<div id="content-3">
+		<div class="span-24 last banner">
+			{{ page.dic.moto }}
+		</div>
+	</div>
 </div>
+
 <div class="span-24">
 	{% with "horizontal" as catalog_class %}
 		{% include "site/catalog.inc.html" %}

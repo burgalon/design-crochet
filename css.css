@@ -1,13 +1,17 @@
 /** Globals **/
-body {background: url({{ pack.bg.get_file }}) repeat; }
+@charset "utf-8";
+body {background: url({{ pack.bg2.get_file }}) repeat; }
 
-#navigation .n_1 {background-color: #ffb7b9;}
-#navigation .n_2 {background-color: #3a9fbc;}
-#navigation .n_3 {background-color: #968f71;}
-#navigation .n_4 {background-color: #a06c39;}
+.container{background: url({{ pack.back.get_file }}) no-repeat;}
+
+#navigation .n_1 {background-color: #fcadab; }
+#navigation .n_2 {background-color: #4d8eaa; }
+#navigation .n_3 {background-color: #847c60; }
+#navigation .n_4 {background-color: #845930; }
+
 
 table{ border-collapse: collapse !important; margin: 0 auto; width: 100%;}
-ul li {list-style: none;}
+ul li {list-style: none; color:fff}
 ul {margin: 0;padding: 0;}
 
 .button, input[type=submit], input[type=button], .submit-row input {
@@ -38,11 +42,11 @@ ul {margin: 0;padding: 0;}
 
 /** base.html - navigation **/
 .nav li {display: inline;}
-.nav {font-family: Helvetica,Arial,sans-serif; font-weight: bold; font-size: 140%; }
-.nav a {padding: 0 1em 0 0; text-decoration: none; color: #703333;}
-.nav a:hover {color: #ff3333;}
+.nav {font-family: Helvetica,Arial,sans-serif; font-weight: bold; font-size: 100%; }
+.nav a {float: left; padding: 5px 20px 5px 20px; text-decoration: none; color: #fff; margin:0px 0px 0px 30px;}
+.nav a:hover {color: #fff;}
 
-.nav .first {padding-left: 0;}
+.nav .first {padding-left: 10px;}
 .rtl .nav .first {padding-right: 0;}
 
 .float {float: left;}
@@ -54,14 +58,28 @@ ul {margin: 0;padding: 0;}
 #header h1 {display: inline; float: left;}
 .rtl #header h1 {float: right;}
 
-#navigation {float: right; width: auto; margin-top: 1em;}
+#navigation {float: right; width: auto; margin-top: 10em; margin-right: 40px;}
 .rtl #navigation {float: left;}
 
 #navigation .home {display: none;}
 #header .logo a {text-decoration:none; font-size: 35px; color: black;}
 
-#content {background-color: #fff; min-height: 330px; border-top: 4px solid #EAEFF3; padding-top: 1.5em;
-background: url({{ pack.stripes_h.get_file}}) repeat;}
+#content {
+margin: 0 auto;
+background: url(http://m5.9folds.boorgle.com/agpuaW5lOWZvbGRzchELEglQb3J0Zm9saW8YqbIPDA/1272990534.25/stripes_v.jpg) repeat;
+padding: 0 11px;
+}
+
+#content-2 {
+background: #fff url(http://m6.9folds.boorgle.com/agpuaW5lOWZvbGRzchELEglQb3J0Zm9saW8YqbIPDA/1272993736.24/stripes_h.jpg) repeat;
+padding: 13px 0px;
+}
+#content-3 {
+margin: 0 auto;
+background: #fff;
+min-height: 330px;
+border-top: 0px solid #EAEFF3;
+padding-top: 1.5em;
 }
 #footer {text-align:center; background: #fff;}
 
