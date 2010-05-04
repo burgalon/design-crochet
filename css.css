@@ -4,7 +4,7 @@ body {background: url({{ pack.bg2.get_file }}) repeat; }
 
 .container{background: url({{ pack.back.get_file }}) no-repeat;}
 
-#navigation a {background-color: ##4D8EAA; opacity: 0.7;}
+#navigation a {background-color: #4D8EAA; opacity: 0.7;}
 #navigation .n_2 {background-color: #fcadab; }
 #navigation .n_3 {background-color: #4d8eaa; }
 #navigation .n_4 {background-color: #847c60; }
