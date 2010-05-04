@@ -1,10 +1,13 @@
-{% extends "site/item.html" %}
+{% extends pack.base.template %}
 {% load markup %}
 {% load utils %}
 
 {% block bodyClass %}{{ block.super }} page_{{ page.template }}{% for t in page.pages %} page_{{t.slug_name}}{% endfor %}{% endblock %}
+{% block title %}{{ item }} | {{  portfolio.title }}{% endblock %}
+{% block metaDescription %}{% firstof page.dic.sub_title item.name %}{%endblock %}
+{% block metaKeywords %}{{ item.tags }}{%endblock %}
 
-{% block content %}
+{% block main %}
 	<div class="span-6 product">
 		<h3 class="product-title">{{item.name|capfirst}}</h3>
 		{{ page.dic.description|textile }}

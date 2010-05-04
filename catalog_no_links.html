@@ -1,6 +1,6 @@
-{% extends "site/catalog.html" %}
+{% extends pack.base.template %}
 {% load markup %}
-{% block content %}
+{% block main %}
 	{% if items %}
 		<h2>{{page.name}}</h2>
 		<ul class="catalog {{ page.tags_string }} horizontal">

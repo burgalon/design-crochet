@@ -1,4 +1,4 @@
-{% extends "site/catalog.html" %}
+{% extends pack.base.template %}
 {% load markup %}
 {% block head %}
 	{{ block.super }}
@@ -7,19 +7,16 @@
 	</style>
 {% endblock %}
 
-{% block content %}
-<div id="content-2">
-	<div id="content-3">
-		<div class="span-24 last banner">
-			{{ page.dic.moto }}
-		</div>
-
-		<div class="span-24">
-			{% with "horizontal" as catalog_class %}
-				{% include "site/catalog.inc.html" %}
-			{% endwith %}
-		</div>
-		<div class="clear">&nbsp;</div>
-	</div>
+{% block main %}
+<div class="span-24 last banner">
+	{{ page.dic.moto }}
 </div>
+
+<div class="span-24">
+	{% with "horizontal" as catalog_class %}
+		{% include "site/catalog.inc.html" %}
+	{% endwith %}
+</div>
+<div class="clear">&nbsp;</div>
+{% endblock %}
 {% endblock %}
