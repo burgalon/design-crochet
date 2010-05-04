@@ -4,10 +4,11 @@ body {background: url({{ pack.bg2.get_file }}) repeat; }
 
 .container{background: url({{ pack.back.get_file }}) no-repeat;}
 
-#navigation .n_1 {background-color: #fcadab; }
-#navigation .n_2 {background-color: #4d8eaa; }
-#navigation .n_3 {background-color: #847c60; }
-#navigation .n_4 {background-color: #845930; }
+#navigation a {background-color: ##4D8EAA; opacity: 0.7;}
+#navigation .n_2 {background-color: #fcadab; }
+#navigation .n_3 {background-color: #4d8eaa; }
+#navigation .n_4 {background-color: #847c60; }
+#navigation .n_5 {background-color: #845930; }
 
 .clear {height: 0;}
 table{ border-collapse: collapse !important; margin: 0 auto; width: 100%;}
@@ -43,7 +44,7 @@ ul {margin: 0;padding: 0;}
 /** base.html - navigation **/
 .nav li {display: inline;}
 .nav {font-family: Helvetica,Arial,sans-serif; font-weight: bold; font-size: 100%; }
-.nav a {float: left; padding: 5px 20px 5px 20px; text-decoration: none; color: #fff; margin:0px 0px 0px 30px;}
+.nav a {float: left; padding: 5px 20px 5px 20px; text-decoration: none; color: #fff; margin:0px 0px 0px 5px;}
 .nav a:hover {color: #fff;}
 
 .nav .first {padding-left: 10px;}
