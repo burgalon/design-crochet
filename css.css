@@ -59,7 +59,7 @@ ul {margin: 0;padding: 0;}
 #header h1 {display: inline; float: left;}
 .rtl #header h1 {float: right;}
 
-#navigation {float: right; width: auto; margin-top: 10em; margin-right: 40px;}
+#navigation {float: right; width: auto;}
 .rtl #navigation {float: left;}
 
 #navigation .home {display: none;}
