@@ -70,6 +70,7 @@ margin: 0 auto;
 background: url({{ pack.stripes_v.get_file }}) repeat scroll 20px 0;
 padding: 0 22px 0 11px;
 width: 977px;
+border-bottom: 4px solid #c9c6c4;
 }
 
 #content-2 {
@@ -84,7 +85,7 @@ min-height: 330px;
 border-top: 0 solid #EAEFF3;
 padding: 1.5em 11px;
 }
-#footer {text-align:center; background: #c5b898; width: auto; color: #978d70;}
+#footer {text-align:center; background: #c5b898; width: auto; color: #978d70; margin-top: 1em;}
 #footer a{color: #827a5d;}
 
 /** site/item.html **/
