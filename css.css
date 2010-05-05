@@ -2,7 +2,7 @@
 @charset "utf-8";
 body {background: url({{ pack.bg2.get_file }}) repeat; }
 
-.container{background: url({{ pack.back.get_file }}) no-repeat;}
+.container{background: url({{ pack.back.get_file }}) no-repeat; width: 994px;}
 
 #navigation a {background-color: #4D8EAA; opacity: 0.7; position: relative; top: 25px;}
 #navigation .n_2 {background-color: #fcadab; }
@@ -80,7 +80,7 @@ margin: 0 auto;
 background: #fff;
 min-height: 330px;
 border-top: 0px solid #EAEFF3;
-padding-top: 1.5em;
+padding: 1.5em 11px;
 }
 #footer {text-align:center; background: #fff;}
 
