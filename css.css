@@ -67,8 +67,8 @@ ul {margin: 0;padding: 0;}
 
 #content {
 margin: 0 auto;
-background: url({{ pack.stripes_v.get_file }}) repeat;
-padding: 0 11px;
+background: url({{ pack.stripes_v.get_file }}) repeat scroll 20px 0;
+padding: 0 22px 0 11px;
 width: 977px;
 }
 
