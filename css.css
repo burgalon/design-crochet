@@ -67,12 +67,12 @@ ul {margin: 0;padding: 0;}
 
 #content {
 margin: 0 auto;
-background: url(http://m5.9folds.boorgle.com/agpuaW5lOWZvbGRzchELEglQb3J0Zm9saW8YqbIPDA/1272990534.25/stripes_v.jpg) repeat;
+background: url({{ pack.stripes_v.get_file }}) repeat;
 padding: 0 11px;
 }
 
 #content-2 {
-background: #fff url(http://m6.9folds.boorgle.com/agpuaW5lOWZvbGRzchELEglQb3J0Zm9saW8YqbIPDA/1272993736.24/stripes_h.jpg) repeat;
+background: #fff url({{ pack.stripes_h.get_file }}) repeat;
 padding: 11px 0px;
 }
 #content-3 {
