@@ -138,8 +138,8 @@ label {display: block;}
 #social a {padding: 0 0.1em;}
 
 /** site/home.html **/
-.page_home .item-title, .page_home .item-sub-title {text-align: center; color: white; background: #222; opacity: 0.6; float:none; display: block; position: absolute; bottom: 1em;}
-.page_home .item-sub-title {bottom: 0; min-height: 0;}
+.page_home .item-title, .page_home .item-sub-title {text-align: center; color: white; background: #222; opacity: 0.6; float:none; display: block; position: absolute; bottom: 0; min-height: 0;}
+.page_home .item-title {bottom: 1em; line-height: 1.5em; height: 1em; padding-top: 1em;}
 
 .blogger {background: url('{{ pack.blogger.get_file }}') center 0 no-repeat;}
 .delicious {background: url('{{ pack.delicious.get_file }}') center 0 no-repeat;}
