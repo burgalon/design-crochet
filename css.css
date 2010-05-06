@@ -109,7 +109,7 @@ padding: 1.5em 11px 0;
 .rtl .item-thumb {float: right;}
 
 #content .catalog {clear: both; margin: 0;}
-.horizontal .item-title, .horizontal .item-tags {width: 300px;}
+.horizontal .item-title, .horizontal .item-sub-title, .horizontal .item-tags {width: 300px;}
 .horizontal li {float: left; width: 310px;}
 .rtl .horizontal li {float: right;}
 
@@ -136,6 +136,16 @@ label {display: block;}
 .icon24 {display: block; width: 24px; height: 24px; text-indent: -1000em; overflow:hidden;}
 #social {margin: 0;}
 #social a {padding: 0 0.1em;}
+
+/** site/home.html **/
+.page_home .item-title, .page_home .item-sub-title {
+	position: relative;
+	bottom: 3em;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	height: 1em;
+}
 
 .blogger {background: url('{{ pack.blogger.get_file }}') center 0 no-repeat;}
 .delicious {background: url('{{ pack.delicious.get_file }}') center 0 no-repeat;}
