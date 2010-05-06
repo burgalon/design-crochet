@@ -70,21 +70,21 @@ ul {margin: 0;padding: 0;}
 margin: 0 auto;
 background: url({{ pack.stripes_v.get_file }}) repeat scroll 20px 0;
 padding: 0 22px 0 11px;
-width: 977px;
+width: 966px;
 border-bottom: 4px solid #c9c6c4;
 }
 
 #content-2 {
 background: #fff url({{ pack.stripes_h.get_file }}) repeat;
 padding: 11px 0 0 0;
-width: 977px;
+width: 966px;
 }
 #content-3 {
 margin: 0 auto;
 background: #fff;
 min-height: 330px;
 border-top: 0 solid #EAEFF3;
-padding: 1.5em 11px 0;
+padding: 1.5em 0 0 11px;
 }
 
 .stripes-h {background: url({{ pack.stripes_h.get_file }}); height: 19px;}
