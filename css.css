@@ -83,10 +83,10 @@ margin: 0 auto;
 background: #fff;
 min-height: 330px;
 border-top: 0 solid #EAEFF3;
-padding: 1.5em 11px;
+padding: 1.5em 11px 0;
 }
 
-.stripes-h {background: url({{ pack.stripes_v.get_file }}); height: 19px;}
+.stripes-h {background: url({{ pack.stripes_h.get_file }}); height: 19px;}
 #footer {text-align:center; background: #c5b898; width: auto; color: #978d70; margin-top: 1em;}
 #footer a{color: #827a5d; text-decoration: none;}
 
