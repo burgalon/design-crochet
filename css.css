@@ -8,7 +8,7 @@ body {background: url({{ pack.bg2.get_file }}) repeat; }
 #navigation .n_2 {background-color: #fcadab; }
 #navigation .n_3 {background-color: #4d8eaa; }
 #navigation .n_4 {background-color: #847c60; }
-#navigation .n_5 {background-color: #845930; }
+#navigation .n_5 {background-color: #8e5c74; }
 
 .clear {height: 0;}
 table{ border-collapse: collapse !important; margin: 0 auto; width: 100%;}
