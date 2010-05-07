@@ -68,8 +68,8 @@ ul {margin: 0;padding: 0;}
 
 #content {
 margin: 0 auto;
-background: url({{ pack.stripes_v.get_file }}) repeat scroll 20px 0;
-padding: 0 22px 0 11px;
+background: url({{ pack.stripes_v.get_file }}) repeat scroll 22px 0;
+padding: 0 20px 0 11px;
 width: 966px;
 border-bottom: 4px solid #c9c6c4;
 }
@@ -88,7 +88,7 @@ padding: 1.5em 0 0 11px;
 }
 
 .stripes-h {background: url({{ pack.stripes_h.get_file }}); height: 19px;}
-#footer {text-align:center; background: #c5b898; width: auto; color: #978d70; margin-top: 1em;}
+#footer {text-align:center; background: #c5b898; width: 390px; color: #978d70; margin-top: 1em;}
 #footer a{color: #827a5d; text-decoration: none;}
 
 /** site/item.html **/
