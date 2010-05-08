@@ -9,7 +9,7 @@
 {% block content %}
 	<div class="span-12">
 		{% for file in page.files %}
-			{% file.render %}
+			{{ file.render }}
 		{% endfor %}
 	</div>
 	<div class="span-12 last">
