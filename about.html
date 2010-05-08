@@ -6,9 +6,9 @@
 		{% if files.about.get_file %}.page_about div.last {background: url('{{ files.about.get_file|safe}}') center 0 no-repeat ; height: 400px;}{% endif %}
 	</style>
 {% endblock %}
-{% block content %}
+{% block main %}
 	<div class="span-12">
-	
+		{{ page.dic.text|textile }}
 	</div>
 	<div class="span-12 last">
 		{% for file in page.files %}
