@@ -4,7 +4,7 @@ body {background: url({{ pack.bg2.get_file }}) repeat; }
 
 .container{background: url({{ pack.back.get_file }}) no-repeat; width: 994px;}
 
-#navigation a {background-color: #4D8EAA; opacity: 0.7; position: relative; top: 25px;}
+#navigation a {background-color: #4D8EAA; opacity: 0.7; filter: alpha(opacity = 70); position: relative; top: 25px;}
 #navigation .n_2 {background-color: #fcadab; }
 #navigation .n_3 {background-color: #4d8eaa; }
 #navigation .n_4 {background-color: #847c60; }
@@ -139,7 +139,7 @@ label {display: block;}
 #social a {padding: 0 0.1em;}
 
 /** site/home.html **/
-.page_home .item-title, .page_home .item-sub-title {text-align: center; color: white; background: #222; opacity: 0.6; float:none; display: block; position: absolute; bottom: 0; min-height: 0;}
+.page_home .item-title, .page_home .item-sub-title {text-align: center; color: white; background: #222; opacity: 0.6; filter: alpha(opacity = 60); float:none; display: block; position: absolute; bottom: 0; min-height: 0;}
 .page_home .item-title {bottom: 1em; line-height: 1.5em; height: 1.5em; padding-top: 4px;}
 
 .blogger {background: url('{{ pack.blogger.get_file }}') center 0 no-repeat;}
