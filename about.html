@@ -8,10 +8,11 @@
 {% endblock %}
 {% block content %}
 	<div class="span-12">
+	
+	</div>
+	<div class="span-12 last">
 		{% for file in page.files %}
 			{{ file.render }}
 		{% endfor %}
-	</div>
-	<div class="span-12 last">
 	</div>
 {% endblock %}
