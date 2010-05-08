@@ -1,5 +1,4 @@
 /** Globals **/
-@charset "utf-8";
 body {background: url({{ pack.bg2.get_file }}) repeat; }
 
 .container{background: url({{ pack.back.get_file }}) no-repeat; width: 994px;}
