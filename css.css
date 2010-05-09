@@ -102,6 +102,7 @@ padding: 1.5em 0 0 11px;
 	width:490px;
 }
 #footer a{color: #827a5d; text-decoration: none;}
+#footer-powered {direction: ltr;}
 
 /** site/item.html **/
 .item_wrap img {width: 670px;}
