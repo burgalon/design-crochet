@@ -65,7 +65,7 @@ ul {margin: 0;padding: 0;}
 
 #navigation .home {display: none;}
 #header {height: 40px;}
-#header .logo {position: rel; right: 0;}
+#header .logo {position: absolute;}
 #header .logo a {text-decoration:none; font-size: 35px; color: black;}
 
 #content {
