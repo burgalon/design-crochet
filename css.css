@@ -138,6 +138,7 @@ label {display: block;}
 #social a {padding: 0 0.1em;}
 
 /** site/home.html **/
+.page_home h3 {display:none;} /** in case home template is not being used as home **/
 .page_home .item-title, .page_home .item-sub-title {text-align: center; color: white; background: #222; opacity: 0.6; filter: alpha(opacity = 60); float:none; display: block; position: absolute; bottom: 0; min-height: 0;}
 .page_home .item-title {bottom: 1em; line-height: 1.5em; height: 1.5em; padding-top: 4px;}
 
