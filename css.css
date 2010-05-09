@@ -48,7 +48,7 @@ ul {margin: 0;padding: 0;}
 /** base.html - navigation **/
 .nav li {display: inline;}
 .nav {font-family: Helvetica,Arial,sans-serif; font-weight: bold; font-size: 100%; }
-.nav a {padding: 5px 20px 5px 20px; text-decoration: none; color: #fff; margin:0 0 0 5px;}
+.nav a {padding: 5px 20px 5px 20px; text-decoration: none; color: #fff; margin:0 0 0 5px; line-height: 3.5em;}
 .nav a:hover {color: #fff;}
 
 .nav .first {padding-left: 10px;}
