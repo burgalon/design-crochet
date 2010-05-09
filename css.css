@@ -91,6 +91,7 @@ padding: 1.5em 0 0 11px;
 
 .stripes-h {background: url({{ pack.stripes_h.get_file }}); height: 19px;}
 #footer {
+	background:#C5B898;
 	clear:both;
 	color:#978D70;
 	float:none;
