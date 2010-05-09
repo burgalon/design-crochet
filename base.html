@@ -1,6 +1,13 @@
 {% extends "site/base.html" %}
 {% load markup %}
 
+{% block logo %}
+	{% if files.logo %}
+		<a href="{{ portfolio.url }}" title="{{ dic.moto }}"><span>{{  portfolio.title }}</span>{{ files.logo.render }}</a>
+	{% else %}
+		<a href="{{ portfolio.url }}" title="{{ dic.moto }}"><span>{{  portfolio.title }}</span></a>
+	{% endif %}
+{% endblock %}
 
 {% block content %}
 <div id="content-2">
