@@ -90,7 +90,16 @@ padding: 1.5em 0 0 11px;
 }
 
 .stripes-h {background: url({{ pack.stripes_h.get_file }}); height: 19px;}
-#footer {text-align:center; background: #c5b898; width: 490px; color: #978d70; margin-top: 1em;}
+#footer {
+	clear:both;
+	color:#978D70;
+	float:none;
+	margin:0 auto;
+	position:relative;
+	text-align:center;
+	top:1em;
+	width:490px;
+}
 #footer a{color: #827a5d; text-decoration: none;}
 
 /** site/item.html **/
