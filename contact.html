@@ -30,7 +30,7 @@
 	<p>{{  portfolio.dic.email|obfuscate }}</p>
 	
 	<h3>follow us</h3>
-	<ul id="social" class="nav">
+	<ul class="nav social">
 		{% for key,val in portfolio.dic.social|split %}
 			<li><a href="{{ val }}" class="float icon24 {{ key }}">{{ key }}</a></li>
 		{% endfor %}
