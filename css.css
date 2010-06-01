@@ -110,6 +110,9 @@ padding: 1.5em 0 0 11px;
 .rtl .item-photo {float: right;}
 .item-photo.active {background: none;}
 
+.item_nav a {padding: 0.5em; display:block; text-decoration: none; float: left; background: #c9c; color: white; margin:1em 10px 1em 0; width: 60px; text-align: center; }
+.rtl .item_nav a{float:right; margin: 1em 0 1em 10px; }
+
 /** site/catalogs.inc - Catalogs **/
 .catalog .item-title, #content .catalog .item-tags {color: black; text-decoration: none; display: block; line-height: 2em; height: 2em; font-size: 1.5em; text-transform: capitalize;}
 
