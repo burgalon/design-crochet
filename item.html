@@ -4,8 +4,6 @@
 
 {% block bodyClass %}{{ block.super }} page_{{ page.template }}{% for t in page.pages %} page_{{t.slug_name}}{% endfor %}{% endblock %}
 {% block title %}{{ item }} | {{  portfolio.title }}{% endblock %}
-{% block metaDescription %}{% firstof page.dic.sub_title item.name %}{%endblock %}
-{% block metaKeywords %}{{ item.tags }}{%endblock %}
 
 {% block main %}
 	<div class="span-6 product">
