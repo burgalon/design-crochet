@@ -138,6 +138,7 @@ padding: 1.5em 0 0 11px;
 .item-sub-title {text-decoration: none; min-height: 4em; color: black;}
 
 .last {margin: 0 !important;}
+.n1-mod-item {clear: both;}
 
 /** site/home.html **/
 .banner {display: block; width: 310px; height: 310px; text-indent: -1000em;overflow:hidden; direction: ltr;}
