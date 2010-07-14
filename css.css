@@ -106,9 +106,9 @@ padding: 1.5em 0 0 11px;
 
 /** site/item.html **/
 .item_wrap img {width: 670px;}
-.item-photo {display: block; width: 10px; height: 10px; margin-left: 5px; background: grey; border: 1px solid black; text-indent: -9999px; overflow:hidden; direction: ltr; text-decoration:none; float: left;}
+.item-photo {display: block; text-align:center; width: 20px; height: 20px; margin-left: 5px; border: 1px solid #aaa; color: black; overflow:hidden; direction: ltr; text-decoration:none; float: left;}
 .rtl .item-photo {float: right;}
-.item-photo.active {background: none;}
+.item-photo.active {background: #ccc;}
 
 .item_nav a {padding: 0.5em; display:block; text-decoration: none; float: left; background: #c9c; color: white; margin:1em 10px 1em 0; width: 60px; text-align: center; }
 .rtl .item_nav a{float:right; margin: 1em 0 1em 10px; }
